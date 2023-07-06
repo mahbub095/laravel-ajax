@@ -6,14 +6,30 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function producttest()
+    public function products()
     {
         return view('products');
     }
 
-    public function addpProducts()
+    public function addpProducts(Request $request)
     {
-        return view('products');
+
+        $request->validate(
+
+            [
+                'name' => 'required|unique:products',
+                'price' => 'required'
+
+            ],
+
+            [
+                'name.required' => 'Name is required',
+                'name.unique' => 'Products already exits',
+                'price.required' => 'Price is required'
+
+            ],
+
+        );
     }
 
 }

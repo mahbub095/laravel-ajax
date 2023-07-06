@@ -16,4 +16,4 @@ use App\Http\Controllers\ProductController;
 
 
 Route::get('/', [ProductController::class, 'products'])->name('products');
-Route::get('/', [ProductController::class, 'addpProducts'])->name('add.product');
+Route::get('/add-products', [ProductController::class, 'addpProducts'])->name('add.product');
