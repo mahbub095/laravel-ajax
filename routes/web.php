@@ -15,4 +15,5 @@ use App\Http\Controllers\ProductController;
 */
 
 
-Route::get('/', [ProductController::class, 'producttest']);
+Route::get('/', [ProductController::class, 'products'])->name('products');
+Route::get('/', [ProductController::class, 'addpProducts'])->name('add.product');
