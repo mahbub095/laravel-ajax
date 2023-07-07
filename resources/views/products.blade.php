@@ -24,7 +24,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <h2 class="my-3">Test Ajax</h2>
-            <a href="" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</a>
+            <a href="" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#addModal">Add</a>
             <div class="table-data">
                 <table class="table table-bordered">
                     <thead class="thead-dark">
@@ -51,6 +51,8 @@
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 @include('add_product_modal')
